@@ -8,19 +8,25 @@ const Contact = () => {
         <h3>Contact</h3>
         <div className="contact-flex">
           <div className="contact-box">
-            <h4>Email</h4>
+            <h4>Connect</h4>
             <p>
-              <a href="mailto:rajeshchittyal21@gmail.com" data-cursor="disable">
-                rajeshchittyal21@gmail.com
+              <a
+                href="https://www.linkedin.com/in/rana-kabiraj-991495167/"
+                target="_blank"
+                data-cursor="disable"
+              >
+                LinkedIn Profile
               </a>
             </p>
             <h4>Education</h4>
-            <p>BSc in Computer Science</p>
+            <p>B.Tech in Electronics & Communications Engineering</p>
+            <h4>Certifications</h4>
+            <p>Google Generative AI Leader • Oracle AI Vector Search</p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/raxx21"
+              href="https://github.com/Rakabi007"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -28,7 +34,7 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/rajesh-chityal-2a70141b3"
+              href="https://www.linkedin.com/in/rana-kabiraj-991495167/"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -36,25 +42,25 @@ const Contact = () => {
               Linkedin <MdArrowOutward />
             </a>
             <a
-              href="https://x.com/raxx21_official"
+              href="https://x.com/RanaKabiraj"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
             >
-              Twitter <MdArrowOutward />
+              X (Twitter) <MdArrowOutward />
             </a>
             <a
-              href="https://www.instagram.com/therajeshchityal"
+              href="mailto:ranakabiraj@gmail.com"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
             >
-              Instagram <MdArrowOutward />
+              Email <MdArrowOutward />
             </a>
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Rajesh Chityal</span>
+              Customized & Built <br /> by <span>Rana Kabiraj</span>
             </h2>
             <h5>
               <MdCopyright /> 2025

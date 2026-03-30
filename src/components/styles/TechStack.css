@@ -1,0 +1,113 @@
+.techstack-modern {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.techstack-header {
+    text-align: center;
+    margin-bottom: 80px;
+    z-index: 10;
+}
+
+.techstack-header h2 {
+    font-size: calc(3vw + 40px);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.techstack-header p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 20px auto 0;
+    letter-spacing: 0.5px;
+}
+
+.techstack-marquees {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.techstack-marquees.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tech-pill {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    border-radius: 100px;
+    margin: 0 15px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tech-pill:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--accentColor, #818cf8);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(129, 140, 248, 0.15);
+}
+
+.tech-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+    transition: 0.3s ease;
+}
+
+.tech-pill:hover .tech-icon {
+    filter: drop-shadow(0 0 12px var(--accentColor, #818cf8));
+}
+
+.tech-name {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .techstack-header h2 {
+        font-size: 40px;
+    }
+
+    .tech-pill {
+        padding: 15px 25px;
+    }
+
+    .tech-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .tech-name {
+        font-size: 1rem;
+    }
+}
